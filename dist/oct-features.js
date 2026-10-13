@@ -2,7 +2,16 @@ const bilingual=(az,en)=>window.siteLanguage==='en'?en:az;
 const articleData=()=>window.siteLanguage==='en'?window.EN_CONTENT.article:window.OCT_CONTENT.article;
 const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function toumaiHTML(){return `<section class="toumai-section wrap section"><div class="toumai-visual"><img src="/assets/toumai-system.png" width="450" height="259" loading="lazy" alt="Toumai — ${bilingual('robotik sistem, görüntüləmə bölməsi və cərrah konsolu','robotic system, imaging unit and surgeon console')}"></div><div class="toumai-copy"><h2>${bilingual('Toumai robotik cərrahiyyə sistemi','Toumai robotic surgery system')}</h2><p>${bilingual('Robotik qollar, görüntüləmə sistemi və cərrah konsolu.','Robotic arms, imaging system and surgeon console.')}</p><a class="button primary" href="/robotik-cerrahiyye/">${bilingual('Robotik cərrahiyyə nədir?','What is robotic surgery?')}<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></div></section>`}
-function blogTeaser(){const a=articleData();return `<section class="wrap section home-blog" id="bloq"><div><h2>${bilingual('Bloq','Blog')}</h2><p>${bilingual('Robotik cərrahiyyə haqqında.','About robotic surgery.')}</p></div><a class="blog-feature" href="/bloq/azerbaycanda-ilk-robotik-cerrahiyye/"><h3>${a.title}</h3><p>${bilingual('Robotik prostat cərrahiyyəsi və onun imkanları.','Robotic prostate surgery and its capabilities.')}</p><span class="text-link">${bilingual('Məqaləni oxu','Read the article')} <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></a></section>`}
+function blogTeaser(){
+ const a=articleData();
+ return `<section class="wrap section home-blog home-blog-editorial" id="bloq" aria-labelledby="home-blog-title">
+ <div class="home-blog-heading"><h2 id="home-blog-title">${bilingual('Bloq','Blog')}</h2><p>${bilingual('Robotik cərrahiyyə haqqında.','About robotic surgery.')}</p></div>
+ <a class="blog-feature" href="/bloq/azerbaycanda-ilk-robotik-cerrahiyye/" aria-labelledby="home-article-title">
+ <div class="blog-feature-media"><img src="/assets/toumai-hero-poster.jpg" width="1920" height="920" alt="${bilingual('Toumai robotik cərrahiyyə sisteminin alətləri','Instruments of the Toumai robotic surgery system')}" loading="lazy" decoding="async"></div>
+ <div class="blog-feature-copy"><h3 id="home-article-title">${escapeHTML(a.title)}</h3><p>${bilingual('Robotik prostat cərrahiyyəsi və onun imkanları.','Robotic prostate surgery and its capabilities.')}</p>
+ <span class="blog-feature-link">${bilingual('Məqaləni oxu','Read the article')}<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></div>
+ </a></section>`;
+}
 function articleParagraph(p,i){
  const az=[['Azərbaycanda robotik   cərrahiyyə','robotik cərrahiyyə'],['Robotik cərrahiyyə'],['Robotik prostat əməliyyatı'],['robotik cərrahiyyə']];
  const en=[['robotic surgery'],['robotic surgery'],['robotic prostate surgery'],['robotic surgery']];
