@@ -1,0 +1,95 @@
+.language-switch{display:flex;gap:4px;flex-shrink:0}.language-switch a{display:grid;place-items:center;min-width:36px;min-height:44px;font-size:13px;font-weight:750;text-decoration:none;border-radius:6px;color:#4a535c}.language-switch a[aria-current]{background:#f6e7eb;color:#a10c25}
+body .header.wrap{gap:clamp(12px,1.5vw,26px)}body .header nav{gap:clamp(10px,1.2vw,20px)}body .header nav a{font-size:14px}body .header .brand{flex-basis:190px;width:190px}
+.toumai-section{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:clamp(32px,5vw,80px);border-top:1px solid #dce1e5}.toumai-visual{background:#edf0f2;padding:clamp(24px,4vw,54px);border-radius:16px}.toumai-visual img{display:block;width:100%;max-width:540px;height:auto;margin:auto}.toumai-copy h2{font-size:clamp(30px,3vw,44px);line-height:1.18;letter-spacing:-.03em}.toumai-copy p{margin:22px 0 28px;line-height:1.7}.toumai-copy button{gap:12px}
+#hekimler .dr-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}.dr-card{min-width:0}.dr-card .dr-photo{aspect-ratio:4/5;height:auto;overflow:hidden;border-radius:12px;background:#edf0f2}.dr-card .dr-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}.dr-card h3{font-size:19px;line-height:1.4;margin:16px 0 8px}.dr-card p{font-size:14px;line-height:1.6}.doctor-profile-portrait img{object-position:center top!important;aspect-ratio:4/5;width:100%;height:auto!important}.doctor-bio p{max-width:74ch;line-height:1.85}.doctor-profile-copy h1{font-size:clamp(34px,4vw,62px)}
+.home-blog{display:grid;grid-template-columns:1fr 1.5fr;gap:50px;align-items:start}.home-blog>div>h2{font-size:clamp(32px,3.4vw,48px);margin-bottom:14px}.blog-feature{display:block;background:#eceff1;padding:36px;border-radius:12px;text-decoration:none;color:inherit}.blog-feature h3{font-size:clamp(26px,2.6vw,36px);line-height:1.3;max-width:25ch}.blog-feature p{margin:18px 0 24px}.blog-feature:hover{background:#e5e9ec}.blog-heading h1{max-width:24ch}.blog-article h2{font-size:28px;line-height:1.4;margin-top:36px}.blog-article li{margin:12px 0}.blog-article ul{padding-left:24px}
+.faq-assistant{position:fixed;right:24px;bottom:94px;z-index:45;font-size:15px;line-height:1.5}.assistant-toggle{display:flex;gap:10px;align-items:center;background:#29343e;color:white;border:0;padding:14px 18px;border-radius:12px;min-height:48px;font:inherit;cursor:pointer;box-shadow:0 8px 24px #20303c26}.assistant-toggle svg{width:22px;height:22px}.faq-assistant section{position:absolute;right:0;bottom:64px;width:min(390px,calc(100vw - 32px));max-height:min(640px,calc(100dvh - 210px));overflow:auto;background:white;box-shadow:0 16px 56px #18273430;border-radius:14px;padding:22px;color:#29343e}.faq-assistant [hidden]{display:none!important}.assistant-header{display:flex;gap:16px;align-items:center;justify-content:space-between}.assistant-header h2{font-size:20px;line-height:1.35;margin:0}.assistant-close{font-size:28px;background:none;border:0;width:44px;height:44px;flex-shrink:0;cursor:pointer}.assistant-intro{font-size:14px;margin:12px 0 18px;color:#53616b}.assistant-topics{display:grid;gap:8px}.assistant-topics button{text-align:left;border:1px solid #d6dde2;background:#f7f8f9;color:#29343e;border-radius:8px;padding:12px;font:inherit;cursor:pointer}.assistant-topics button:hover{border-color:#b7132b;background:#faf0f2}.assistant-answer{font-size:15px;line-height:1.7}.assistant-answer:empty{display:none}.assistant-answer:not(:empty){padding:20px 0;border-bottom:1px solid #d6dde2}.assistant-answer h3{font-size:17px}.assistant-answer p{margin-top:12px}.assistant-answer ul{padding-left:20px}.assistant-form{margin-top:18px}.assistant-form label{display:block;font-weight:650;margin-bottom:8px}.assistant-form>div{display:flex;gap:8px}.assistant-form input{width:0;flex:1;min-height:44px;border:1px solid #aab5bd;border-radius:6px;padding:8px;font:inherit;font-size:16px}.assistant-form button{border:0;border-radius:6px;background:#b7132b;color:#fff;padding:10px 12px;font:inherit;cursor:pointer}:focus-visible{outline:3px solid #a10c25;outline-offset:4px}::selection{background:#f3c6cf;color:#251b1e}
+@media(max-width:1200px){body .header .brand{flex-basis:150px;width:150px}body .header nav a{font-size:12px}#hekimler .dr-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1000px){body .header.wrap nav{display:none;position:absolute;top:100%;left:0;right:0;width:100%;padding:22px;background:#fff;border-bottom:1px solid #dce1e5;flex-direction:column;align-items:stretch;z-index:50}body .header.wrap nav.is-open{display:flex}body .header nav a{font-size:16px;padding:8px}body .header .menu-toggle{display:flex;margin-left:auto}.language-switch{order:1}body .header .menu-toggle{order:2}body .header .brand{flex-basis:180px;width:180px}}
+@media(max-width:700px){.toumai-section,.home-blog{grid-template-columns:1fr;gap:26px}#hekimler .dr-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}.dr-card h3{font-size:17px}.dr-card p{font-size:13px}.blog-feature{padding:26px}.faq-assistant{right:16px;bottom:140px}.assistant-toggle{padding:12px}.faq-assistant section{max-height:calc(100dvh - 260px)}body .header.wrap{padding-inline:14px;gap:10px}body .header .brand{flex-basis:146px;width:146px}.language-switch{gap:0}.language-switch a{min-width:32px}}
+@media(prefers-reduced-motion:reduce){.faq-assistant *{scroll-behavior:auto}}
+
+/* Compact reading rhythm: content defines height; headings stay with their text. */
+body #main .section{padding-block:clamp(32px,3.5vw,48px)}
+body #main .sec-head{margin-bottom:24px}
+body #main .sec-head .eyebrow{margin-bottom:10px}
+body #main .home-about{row-gap:14px;grid-template-rows:min-content 1fr}
+body #main .home-about .sec-head{margin:0;align-self:start}
+body #main .home-about .ha-body p{margin-bottom:12px}
+body #main .home-about .ha-body p:last-of-type{margin-bottom:8px}
+body #main .toumai-copy h2{margin:0}
+body #main .toumai-copy p{margin:16px 0 20px}
+.toumai-copy .button{gap:10px}
+body #main .wi-lead{margin:0 0 22px}
+body #main .breadcrumb{margin:24px 0 12px}
+body #main .detail-header{padding:12px 0 24px}
+body #main .detail-header .eyebrow{margin:0 0 10px}
+body #main .detail-header h1{margin:0;line-height:1.15}
+body #main .article-body{line-height:1.75}
+body #main .article-body p{margin:0 0 18px}
+body #main .article-body p:last-child{margin-bottom:0}
+body #main .article-body h2{margin:28px 0 14px}
+body #main .article-body h2:first-child{margin-top:0}
+body #main .svc-banner{margin-bottom:28px}
+body #main .svc-body{padding-bottom:8px}
+body #main .doctor-profile.has-portrait{align-items:start;padding:12px 0 16px;gap:clamp(28px,4vw,56px)}
+body #main .doctor-profile.has-portrait h1{margin:0 0 12px}
+body #main .doctor-profile .profile-specialty{margin:0 0 22px}
+body #main .doctor-profile-portrait{max-width:360px}
+body #main .doctor-bio{margin-bottom:20px}
+body #main .home-blog{gap:24px 40px;align-items:center}
+body #main .home-blog h2{margin:0 0 10px}
+body #main .home-blog>div>p{margin:0}
+body #main .blog-feature{padding:28px}
+body #main .blog-feature h3{margin:0}
+body #main .blog-feature p{margin:12px 0 18px}
+body #main .blog-reading{max-width:820px}
+body #main .blog-article{max-width:none;padding-bottom:12px}
+body #main .blog-heading{max-width:none;padding:12px 0 24px}
+body #main .blog-heading h1{font-size:clamp(30px,3.7vw,48px);line-height:1.16;max-width:none;color:var(--ink)}
+body #main .blog-article ul{margin:0 0 22px;padding-left:24px}
+body #main .blog-article li{margin:6px 0;padding-left:3px}
+body #main .blog-article li::marker{color:#bd1230}
+.article-next{border-top:1px solid #dce1e5;padding-top:20px;margin-top:26px}
+@media(max-width:750px){
+ body #main .section{padding-block:30px}
+ body #main .home-about{grid-template-rows:auto;row-gap:20px}
+ body #main .sec-head{margin-bottom:20px}
+ body #main .detail-header,body #main .blog-heading{padding:10px 0 20px}
+ body #main .breadcrumb{margin:20px 0 10px}
+ body #main .home-blog{gap:20px}
+ body #main .blog-feature{padding:24px}
+ body #main .doctor-profile.has-portrait{gap:24px}
+ body #main .doctor-profile-portrait{max-width:300px;justify-self:start}
+ body #main .blog-article h2{font-size:24px;line-height:1.35}
+}
+
+/* Questions and contact controls share a calm, consistently spaced layout. */
+body .faq-list{gap:12px}
+body .faq-list details{border:1px solid #dce1e5;border-radius:12px;background:#f7f8f9;overflow:hidden}
+body .faq-list summary{display:grid;grid-template-columns:minmax(0,1fr) 32px;gap:20px;align-items:center;padding:20px 24px;min-height:76px;font-size:18px;line-height:1.5;color:#303b44}
+body .faq-list .faq-question{min-width:0;overflow-wrap:break-word}
+body .faq-list .expand{width:32px;height:32px;margin:0;background:#e9edf0;color:#47545f;border-radius:50%;transform:none}
+body .faq-list .expand svg{width:18px;height:18px;transition:transform .18s ease}
+body .faq-list details[open]{background:#fbf3f5;border-color:#e6b7c0}
+body .faq-list details[open] summary{color:#a60d29}
+body .faq-list details[open] .expand{background:#b7132b;color:#fff;transform:none}
+body .faq-list details[open] .expand svg{transform:rotate(45deg)}
+body .faq-list .faq-body{padding:0 76px 24px 24px;color:#45515a;line-height:1.75}
+body .faq-list .faq-body p{text-indent:0;margin:0 0 12px}
+body .faq-list .faq-body p:last-child{margin-bottom:0}
+body .faq-list summary:focus-visible{outline:2px solid #a60d29;outline-offset:-4px;border-radius:10px}
+body .whatsapp-float{right:24px;bottom:24px;width:56px;height:56px;border:0;z-index:44;box-shadow:0 5px 18px #132c2529}
+body .whatsapp-float::before,body .whatsapp-float::after{display:none;animation:none}
+body .faq-assistant{right:24px;bottom:92px}
+body .assistant-toggle{min-height:48px;padding:12px 16px;gap:9px;border-radius:12px;font-size:14px;line-height:1.4;box-shadow:0 5px 18px #18273426}
+body .faq-assistant section{bottom:60px;max-height:min(620px,calc(100dvh - 176px))}
+@media(max-width:700px){
+ body .faq-list summary{padding:16px;gap:14px;min-height:72px;font-size:16px}
+ body .faq-list .faq-body{padding:0 16px 20px;font-size:16px}
+ body .whatsapp-float{right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:52px;height:52px}
+ body .faq-assistant{right:16px;bottom:calc(148px + env(safe-area-inset-bottom,0px))}
+ body .assistant-toggle{min-height:44px;padding:10px 14px}
+ body .faq-assistant section{bottom:56px;max-height:calc(100dvh - 224px - env(safe-area-inset-bottom,0px))}
+}
+@media(prefers-reduced-motion:reduce){body .faq-list .expand svg{transition:none}}
